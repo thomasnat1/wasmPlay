@@ -1,0 +1,35 @@
+<!-- 
+C code: 
+
+char str[] = "Hello World";
+
+char *getStrOffset(){
+  return &str[0];
+}
+
+ -->
+
+<title>wasm test</title>
+<script>
+	function fetchAndInstantiateWasm (url, imports) {
+		return fetch(url)
+		.then(res => {
+			if(res.ok){
+				return res.arrayBuffer();
+			throw new Error ("noes");
+			}
+		})
+		.then(bytes => WebAssembly.compile(bytes))
+		.then(module => WebAssembly.instantiate(module, imports || {}))
+		.then(instance => instance.exports);
+	}
+
+	fetchAndInstantiateWasm('./program.wasm')
+	.then(exports => {
+		const memory = exports.memory; //this is the memory space of wasm module, specifically the string "Hello world" in this case 
+		const strBuf = new Uint8Array(memory.buffer, exports.getStrOffset(), 11);  // this takes the memory holding the whole memory of module, then calls the function to find out where our specific string starts, then says to give 11 characters 
+		const str = new TextDecoder().decode(strBuf);
+		console.log(str); 
+	})
+
+</script>

@@ -1,0 +1,40 @@
+<!-- 
+C code: 
+
+#include <math.h>
+
+void consoleLog (float num); // this automatically becomes an export in the wasm format 
+
+float nameOfFunction (float num){
+  consoleLog(num); //when this is called, it triggers the consoleLog inside the env on the js side
+  return sqrt(num);
+}
+
+ -->
+
+<title>wasm test</title>
+<script>
+	//fetches and instantiates the module, passing in the imports and returning wasm module exports 
+	function fetchAndInstantiateWasm (url, imports) {
+		return fetch(url)
+		.then(res => {
+			if(res.ok){
+				return res.arrayBuffer();
+			throw new Error ("noes");
+			}
+		})
+		.then(bytes => WebAssembly.compile(bytes))
+		.then(module => WebAssembly.instantiate(module, imports || {}))
+		.then(instance => instance.exports);
+	}
+
+	fetchAndInstantiateWasm('./program.wasm', {
+		env: {
+			consoleLog: num => console.log(num)
+		}
+	})
+	.then(exports => {
+		window.exportedFunc = exports.nameOfFunction;
+	})
+
+</script>

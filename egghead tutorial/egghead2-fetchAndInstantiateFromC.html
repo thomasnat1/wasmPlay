@@ -1,0 +1,32 @@
+<!-- 
+C code: 
+
+#include <math.h>
+
+float nameOfFunction (float num){
+  return sqrt(num);
+}
+
+ -->
+
+<title>wasm test</title>
+<script>
+	function fetchAndInstantiateWasm (url, imports) {
+		return fetch(url)
+		.then(res => {
+			if(res.ok){
+				return res.arrayBuffer();
+			throw new Error ("noes");
+			}
+		})
+		.then(bytes => WebAssembly.compile(bytes))
+		.then(module => WebAssembly.instantiate(module, imports || {}))
+		.then(instance => instance.exports);
+	}
+
+	fetchAndInstantiateWasm('./program.wasm')
+	.then(exports => {
+		window.exportedFunc = exports.nameOfFunction;
+	})
+
+</script>

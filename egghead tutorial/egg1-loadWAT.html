@@ -1,0 +1,33 @@
+<!-- 
+WAT code: 
+(module 
+  (export "sqrt" (func $sqrt))
+  (func $sqrt 
+    (param $num f32)
+    (result f32) 
+    
+    (f32.sqrt (get_local $num))
+  )
+)
+
+ -->
+
+<title>wasm test</title>
+<script>
+	fetch("./test.wasm")
+	.then(res => {
+		if(res.ok){
+			return res.arrayBuffer();
+		throw new Error ("fuck off");
+		}
+	})
+	.then(bytes => {
+		return WebAssembly.compile(bytes);
+	})
+	.then(module => {
+		return WebAssembly.instantiate(module);
+	})
+	.then(instance => {
+		window.wasmSqrt = instance.exports.sqrt;
+	})
+</script>
