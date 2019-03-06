@@ -1,0 +1,9 @@
+
+<script type="text/javascript">
+    // The Module object helps us define options related to the execution of the
+    // WebAssembly code. We'll cover it in more depth in Chapter 5.
+    Module = {};
+    // Define the function to be called when the WebAssembly module is ready to use
+    Module.onRuntimeInitialized = () => console.log(Module._increment(41));
+</script>
+<script src="increment3.js"></script>

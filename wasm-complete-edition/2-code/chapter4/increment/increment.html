@@ -1,0 +1,24 @@
+<script type="text/javascript">
+// The Module object helps us define options related to the execution of the
+// WebAssembly code. We'll cover it in more depth in Chapter 5.
+Module = {};
+
+// Define the function to be called when the WebAssembly module is ready to use
+Module.onRuntimeInitialized = function()
+{
+  // The cwrap() function allows us to wrap an exported C function so that it
+  // can be called directly from JavaScript
+  var increment = Module.cwrap(
+    'increment',  // the C function we want to call from JavaScript
+    'number',     // its return type (accepted: number, string or array)
+    ['number']    // its list of arguments (a number in our case)
+  );
+
+  // Call the function
+  console.log(increment(41));
+};
+</script>
+
+<script src="increment.js"></script>
+
+Open the developer console

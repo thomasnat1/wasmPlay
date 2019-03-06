@@ -1,0 +1,21 @@
+<input type="file" id="upload" multiple>
+
+<script type="text/javascript">
+window.onload = function()
+{
+  // Worker setup
+  var worker = new Worker("worker_files.js");
+  worker.onmessage = msg => {
+    console.log("[Main thread] Got message back:", msg.data);
+  }
+
+  // Send file to WebWorker
+  document
+    .getElementById('upload')
+    .addEventListener('change', function(e){
+      worker.postMessage(this.files)
+    });
+}
+</script>
+
+Open the developer console

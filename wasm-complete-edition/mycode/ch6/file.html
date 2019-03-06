@@ -1,0 +1,19 @@
+<script type="text/javascript">
+var Module = {
+    // Don't auto-run main()
+    noInitialRun: true,
+    onRuntimeInitialized: () => {
+        // Mount myFile.txt to root folder /
+        FS.writeFile("/myFile.txt", "abc\ndef\nghi");
+        
+        // Read the file back. Note that we specify a UTF-8 encoding; otherwise
+        // FS.readFile() will return the Uint8Array [97, 98, 99, 10, 100, 101, ...],
+        // where each array element represents a character!
+        fileContents = FS.readFile("/myFile.txt", { encoding: "utf8" });
+        console.log("File contents:");
+        console.log(fileContents);
+        console.log("Number of lines:", fileContents.split("\n").length);
+    }
+};
+</script>
+<script src="file.js"></script>

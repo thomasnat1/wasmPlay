@@ -1,0 +1,9 @@
+<script>
+    Module = {
+        onRuntimeInitialized: () =>{
+            FS.writeFile("/test.fa", ">my_sequence\nACGTACGTA");
+        }
+    };
+
+</script>
+<script src="seqtk/seqtk.js"></script>

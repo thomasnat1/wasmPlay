@@ -1,0 +1,15 @@
+<script type="text/javascript">
+// Launch worker
+var worker = new Worker("worker_blobs.js");
+
+// Catch messages received from worker
+worker.onmessage = msg => {
+    console.log("[Main thread] Got message back:", msg.data);
+}
+
+// Send a Blob object to the WebWorker
+var blob = new Blob(['blob data']);
+worker.postMessage(blob);
+</script>
+
+Open the developer console
