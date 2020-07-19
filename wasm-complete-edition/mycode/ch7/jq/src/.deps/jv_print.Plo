@@ -1,0 +1,71 @@
+src/jv_print.lo: src/jv_print.c \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/assert.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/features.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/stdio.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/__config \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stdio.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/bits/alltypes.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/float.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/float.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/bits/float.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/string.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/compat/string.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/string.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/strings.h \
+  src/jv.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/compat/stdarg.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stdarg.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/stdint.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stdint.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/bits/stdint.h \
+  src/jv_dtoa.h src/jv_unicode.h src/jv_alloc.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/stddef.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stddef.h
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/assert.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/features.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/stdio.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/__config:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stdio.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/bits/alltypes.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/float.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/float.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/bits/float.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/string.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/compat/string.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/string.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/strings.h:
+
+src/jv.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/compat/stdarg.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stdarg.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/stdint.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stdint.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/bits/stdint.h:
+
+src/jv_dtoa.h:
+
+src/jv_unicode.h:
+
+src/jv_alloc.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/stddef.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stddef.h:

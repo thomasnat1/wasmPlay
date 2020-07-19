@@ -1,0 +1,20 @@
+<!-- 
+    emconfigure ./configure SDL_LIBS=="-s USE_SDL=2 -s USE_SDL_IMAGE=2 -s USE_SDL_TTF=2 -s USE_SDL_MIXER=2" CXX=em++ CC=em++
+        Note there was an error complaining about SDL 2.0, you need to go change the makefile to look for 2.0.0
+    
+    emmake make SDL_LIBS="-s USE_SDL=2 -s USE_SDL_IMAGE=2 -s USE_SDL_TTF=2 -s USE_SDL_MIXER=2" CXX=em++ CC=em++
+        You get an error because the #include <SDL2/SDL.h> need to be replaced with #include <SDL.h> for all includes. Command to do it: 
+            Use grep -R -l "include <SDL2/" src/ | sort | uniq | xargs -n1 -I{} sed -i 's|include <SDL2/|include <|' {}
+            This does not work perfectly 
+
+    cp src/pacman src/pacman.bc
+        Change output to .bc so can be ingested by em++
+
+    em++ src/pacman.bc -o pacman.html \
+        -s USE_SDL=2 -s USE_SDL_IMAGE=2 -s USE_SDL_TTF=2 -s USE_SDL_MIXER=2 \
+        --preload-file data/@/usr/local/share/pacman/ \
+        --use-preload-plugins \
+        -s EXIT_RUNTIME=1
+
+    Never did get working past this 
+-->

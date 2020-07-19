@@ -1,0 +1,5 @@
+pacman-rail.o: rail.cpp /usr/include/stdc-predef.h rail.h
+
+/usr/include/stdc-predef.h:
+
+rail.h:

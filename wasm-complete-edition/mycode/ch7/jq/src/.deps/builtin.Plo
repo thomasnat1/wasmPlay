@@ -1,0 +1,137 @@
+src/builtin.lo: src/builtin.c \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/sys/time.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/features.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/sys/select.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/bits/alltypes.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/stdlib.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/__config \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/compat/stdlib.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stdlib.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/alloca.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/stddef.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stddef.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/assert.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/ctype.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/compat/ctype.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/ctype.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/limits.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/limits.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/bits/limits.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/math.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/compat/math.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/math.h \
+  modules/oniguruma/src/oniguruma.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/string.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/compat/string.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/string.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/strings.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/compat/time.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/time.h \
+  src/builtin.h src/jq.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/stdio.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stdio.h \
+  src/jv.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/compat/stdarg.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stdarg.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/stdint.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stdint.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/bits/stdint.h \
+  src/bytecode.h src/opcode_list.h src/compile.h src/locfile.h \
+  src/jq_parser.h src/linker.h src/jv_unicode.h src/jv_alloc.h \
+  src/libm.h src/builtin.inc
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/sys/time.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/features.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/sys/select.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/bits/alltypes.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/stdlib.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/__config:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/compat/stdlib.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stdlib.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/alloca.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/stddef.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stddef.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/assert.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/ctype.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/compat/ctype.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/ctype.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/limits.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/limits.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/bits/limits.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/math.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/compat/math.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/math.h:
+
+modules/oniguruma/src/oniguruma.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/string.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/compat/string.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/string.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/strings.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/compat/time.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/time.h:
+
+src/builtin.h:
+
+src/jq.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/stdio.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stdio.h:
+
+src/jv.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/compat/stdarg.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stdarg.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/stdint.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stdint.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/bits/stdint.h:
+
+src/bytecode.h:
+
+src/opcode_list.h:
+
+src/compile.h:
+
+src/locfile.h:
+
+src/jq_parser.h:
+
+src/linker.h:
+
+src/jv_unicode.h:
+
+src/jv_alloc.h:
+
+src/libm.h:
+
+src/builtin.inc:

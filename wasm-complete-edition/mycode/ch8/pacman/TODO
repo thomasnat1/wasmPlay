@@ -1,0 +1,38 @@
+new features to be implemented:
+...
+
+necessary bug fixes:
+...
+
+in general:
+- the great refactoring
+- look for further performance improvements (means less CPU usage)
+
+
+
+for future releases:
+- different level difficullty
+  - level 1: last 20 pills ghosts as fast as pacman
+  - level 2: like level one + ghosts and pacman faster
+  - level 3: like level two but last 30 pills ghosts as fast as pacman
+  - level 4: like level three but ghosts change intelligence
+    - all ghosts more and other intelligence
+	  - blinky: follow pacman with higher intelligence
+	  - pinky: intercepting pacman
+	  - inky: intercepting pacman
+	  - clyde remains stupid
+  - level 5 till open end: like level four
+- game statistics:
+  - how often eaten by which ghost
+  - how often eaten which ghost
+  - how many points per minute
+- high score list
+  - name, score, level, date+time
+  - sortable by different columns
+  - maximum number of entries - the last one (according to score) will be eliminated when a better entry is made.
+  - plausibility checks (to make manipulation a bit more difficult):
+    - Each level has a minimum score that must be reached, and a maximum score that can be reached. So, score and level must fit together.
+    - hash value (MD5 or so) that will also be written to the file, and that will be generated over the high score list's text (normalised line breaks necessary!) plus a formatted value of the "last modified" time of the file (including up to seconds). The list's content is valid only if the last modified time is not more than 1 second beyond the time that was used for the hash (worst case: 2 checks necessary).
+    - encoded game statistics that enable to recompute the correct score value - or the range that it must be in.
+    - If the high score table is invalid, it will be cleared immediately.
+  - If the plausibility checks are hard enough to break, a global high score list could be established. The server needs to reperform the plausibility checks. All necessary information has to be send, including the local high score file and it's "last modified" time.

@@ -1,0 +1,24 @@
+src/jv_unicode.lo: src/jv_unicode.c \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/stdio.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/__config \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stdio.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/features.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/bits/alltypes.h \
+  /Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/assert.h \
+  src/jv_unicode.h src/jv_utf8_tables.h
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/stdio.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libcxx/__config:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/stdio.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/features.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/bits/alltypes.h:
+
+/Users/nattestad/workspaces/emsdk/emscripten/1.38.30/system/include/libc/assert.h:
+
+src/jv_unicode.h:
+
+src/jv_utf8_tables.h:

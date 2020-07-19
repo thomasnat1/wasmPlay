@@ -1,0 +1,465 @@
+pacman-screen.o: screen.cpp screen.h /usr/include/SDL2/SDL.h \
+  /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
+  /usr/include/SDL2/SDL_config.h /usr/include/SDL2/SDL_platform.h \
+  /usr/include/SDL2/begin_code.h /usr/include/SDL2/close_code.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/sys/types.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/features.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/bits/alltypes.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/endian.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/stdint.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__config \
+  /emsdk/emscripten/1.38.30/system/include/libc/stdint.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/bits/stdint.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/sys/select.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/sys/sysmacros.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/stdio.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/stdio.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/stdlib.h \
+  /emsdk/emscripten/1.38.30/system/include/compat/stdlib.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/stdlib.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/alloca.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/stddef.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/stddef.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__nullptr \
+  /emsdk/emscripten/1.38.30/system/include/compat/stdarg.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/stdarg.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/string.h \
+  /emsdk/emscripten/1.38.30/system/include/compat/string.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/string.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/strings.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/inttypes.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/inttypes.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/ctype.h \
+  /emsdk/emscripten/1.38.30/system/include/compat/ctype.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/ctype.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/math.h \
+  /emsdk/emscripten/1.38.30/system/include/compat/math.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/math.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/type_traits \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cstddef \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/limits \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__undef_macros \
+  /usr/include/SDL2/SDL_assert.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/signal.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/bits/signal.h \
+  /usr/include/SDL2/SDL_atomic.h /usr/include/SDL2/SDL_audio.h \
+  /usr/include/SDL2/SDL_error.h /usr/include/SDL2/SDL_endian.h \
+  /usr/include/SDL2/SDL_mutex.h /usr/include/SDL2/SDL_thread.h \
+  /usr/include/SDL2/SDL_rwops.h /usr/include/SDL2/SDL_clipboard.h \
+  /usr/include/SDL2/SDL_cpuinfo.h /usr/include/SDL2/SDL_events.h \
+  /usr/include/SDL2/SDL_video.h /usr/include/SDL2/SDL_pixels.h \
+  /usr/include/SDL2/SDL_rect.h /usr/include/SDL2/SDL_surface.h \
+  /usr/include/SDL2/SDL_blendmode.h /usr/include/SDL2/SDL_keyboard.h \
+  /usr/include/SDL2/SDL_keycode.h /usr/include/SDL2/SDL_scancode.h \
+  /usr/include/SDL2/SDL_mouse.h /usr/include/SDL2/SDL_joystick.h \
+  /usr/include/SDL2/SDL_gamecontroller.h /usr/include/SDL2/SDL_quit.h \
+  /usr/include/SDL2/SDL_gesture.h /usr/include/SDL2/SDL_touch.h \
+  /usr/include/SDL2/SDL_filesystem.h /usr/include/SDL2/SDL_haptic.h \
+  /usr/include/SDL2/SDL_hints.h /usr/include/SDL2/SDL_loadso.h \
+  /usr/include/SDL2/SDL_log.h /usr/include/SDL2/SDL_messagebox.h \
+  /usr/include/SDL2/SDL_power.h /usr/include/SDL2/SDL_render.h \
+  /usr/include/SDL2/SDL_system.h /usr/include/SDL2/SDL_timer.h \
+  /usr/include/SDL2/SDL_version.h /usr/include/SDL2/SDL_image.h \
+  /usr/include/SDL2/SDL_ttf.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/iostream \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/ios \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/iosfwd \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/wchar.h \
+  /emsdk/emscripten/1.38.30/system/include/compat/wchar.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/wchar.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__locale \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/string \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/string_view \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__string \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/algorithm \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/initializer_list \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cstring \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/utility \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__tuple \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cstdint \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__debug \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/memory \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/typeinfo \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/exception \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cstdlib \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/new \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/iterator \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__functional_base \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__functional_base_03 \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/tuple \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/stdexcept \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cassert \
+  /emsdk/emscripten/1.38.30/system/include/libc/assert.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/atomic \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cstdio \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cwchar \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cwctype \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cctype \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/wctype.h \
+  /emsdk/emscripten/1.38.30/system/include/compat/wctype.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/wctype.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/mutex \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__mutex_base \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/chrono \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/ctime \
+  /emsdk/emscripten/1.38.30/system/include/compat/time.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/time.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/ratio \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/climits \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/limits.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/limits.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/bits/limits.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/system_error \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cerrno \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/errno.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/errno.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/bits/errno.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__threading_support \
+  /emsdk/emscripten/1.38.30/system/include/libc/pthread.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/sched.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/functional \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__functional_03 \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/locale.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/locale.h \
+  /emsdk/emscripten/1.38.30/system/include/compat/xlocale.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/streambuf \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/istream \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/ostream \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/locale \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cstdarg \
+  /emsdk/emscripten/1.38.30/system/include/libc/nl_types.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__bsd_locale_fallbacks.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/bitset \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__bit_reference \
+  cmdline_options.h constants.h platform.h \
+  /emsdk/emscripten/1.38.30/system/include/compat/sys/stat.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/sys/stat.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/bits/stat.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/unistd.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/bits/posix.h
+
+screen.h:
+
+/usr/include/SDL2/SDL.h:
+
+/usr/include/SDL2/SDL_main.h:
+
+/usr/include/SDL2/SDL_stdinc.h:
+
+/usr/include/SDL2/SDL_config.h:
+
+/usr/include/SDL2/SDL_platform.h:
+
+/usr/include/SDL2/begin_code.h:
+
+/usr/include/SDL2/close_code.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/sys/types.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/features.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/bits/alltypes.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/endian.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/stdint.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__config:
+
+/emsdk/emscripten/1.38.30/system/include/libc/stdint.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/bits/stdint.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/sys/select.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/sys/sysmacros.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/stdio.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/stdio.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/stdlib.h:
+
+/emsdk/emscripten/1.38.30/system/include/compat/stdlib.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/stdlib.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/alloca.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/stddef.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/stddef.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__nullptr:
+
+/emsdk/emscripten/1.38.30/system/include/compat/stdarg.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/stdarg.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/string.h:
+
+/emsdk/emscripten/1.38.30/system/include/compat/string.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/string.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/strings.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/inttypes.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/inttypes.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/ctype.h:
+
+/emsdk/emscripten/1.38.30/system/include/compat/ctype.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/ctype.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/math.h:
+
+/emsdk/emscripten/1.38.30/system/include/compat/math.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/math.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/type_traits:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cstddef:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/limits:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__undef_macros:
+
+/usr/include/SDL2/SDL_assert.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/signal.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/bits/signal.h:
+
+/usr/include/SDL2/SDL_atomic.h:
+
+/usr/include/SDL2/SDL_audio.h:
+
+/usr/include/SDL2/SDL_error.h:
+
+/usr/include/SDL2/SDL_endian.h:
+
+/usr/include/SDL2/SDL_mutex.h:
+
+/usr/include/SDL2/SDL_thread.h:
+
+/usr/include/SDL2/SDL_rwops.h:
+
+/usr/include/SDL2/SDL_clipboard.h:
+
+/usr/include/SDL2/SDL_cpuinfo.h:
+
+/usr/include/SDL2/SDL_events.h:
+
+/usr/include/SDL2/SDL_video.h:
+
+/usr/include/SDL2/SDL_pixels.h:
+
+/usr/include/SDL2/SDL_rect.h:
+
+/usr/include/SDL2/SDL_surface.h:
+
+/usr/include/SDL2/SDL_blendmode.h:
+
+/usr/include/SDL2/SDL_keyboard.h:
+
+/usr/include/SDL2/SDL_keycode.h:
+
+/usr/include/SDL2/SDL_scancode.h:
+
+/usr/include/SDL2/SDL_mouse.h:
+
+/usr/include/SDL2/SDL_joystick.h:
+
+/usr/include/SDL2/SDL_gamecontroller.h:
+
+/usr/include/SDL2/SDL_quit.h:
+
+/usr/include/SDL2/SDL_gesture.h:
+
+/usr/include/SDL2/SDL_touch.h:
+
+/usr/include/SDL2/SDL_filesystem.h:
+
+/usr/include/SDL2/SDL_haptic.h:
+
+/usr/include/SDL2/SDL_hints.h:
+
+/usr/include/SDL2/SDL_loadso.h:
+
+/usr/include/SDL2/SDL_log.h:
+
+/usr/include/SDL2/SDL_messagebox.h:
+
+/usr/include/SDL2/SDL_power.h:
+
+/usr/include/SDL2/SDL_render.h:
+
+/usr/include/SDL2/SDL_system.h:
+
+/usr/include/SDL2/SDL_timer.h:
+
+/usr/include/SDL2/SDL_version.h:
+
+/usr/include/SDL2/SDL_image.h:
+
+/usr/include/SDL2/SDL_ttf.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/iostream:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/ios:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/iosfwd:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/wchar.h:
+
+/emsdk/emscripten/1.38.30/system/include/compat/wchar.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/wchar.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__locale:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/string:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/string_view:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__string:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/algorithm:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/initializer_list:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cstring:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/utility:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__tuple:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cstdint:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__debug:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/memory:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/typeinfo:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/exception:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cstdlib:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/new:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/iterator:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__functional_base:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__functional_base_03:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/tuple:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/stdexcept:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cassert:
+
+/emsdk/emscripten/1.38.30/system/include/libc/assert.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/atomic:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cstdio:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cwchar:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cwctype:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cctype:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/wctype.h:
+
+/emsdk/emscripten/1.38.30/system/include/compat/wctype.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/wctype.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/mutex:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__mutex_base:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/chrono:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/ctime:
+
+/emsdk/emscripten/1.38.30/system/include/compat/time.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/time.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/ratio:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/climits:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/limits.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/limits.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/bits/limits.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/system_error:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cerrno:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/errno.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/errno.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/bits/errno.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__threading_support:
+
+/emsdk/emscripten/1.38.30/system/include/libc/pthread.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/sched.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/functional:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__functional_03:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/locale.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/locale.h:
+
+/emsdk/emscripten/1.38.30/system/include/compat/xlocale.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/streambuf:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/istream:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/ostream:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/locale:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cstdarg:
+
+/emsdk/emscripten/1.38.30/system/include/libc/nl_types.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__bsd_locale_fallbacks.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/bitset:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__bit_reference:
+
+cmdline_options.h:
+
+constants.h:
+
+platform.h:
+
+/emsdk/emscripten/1.38.30/system/include/compat/sys/stat.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/sys/stat.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/bits/stat.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/unistd.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/bits/posix.h:

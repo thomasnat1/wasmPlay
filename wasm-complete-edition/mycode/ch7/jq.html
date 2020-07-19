@@ -1,0 +1,11 @@
+<!-- 
+    First start but pulling in the needed submodule : "git submodule update --init"
+    Per readme, run autoreconf -fi to generate configure file 
+    Also per readme, run ./configure --with-oniguruma=builtin --disable-maintainer-mode
+    Finally run, make LDFLAGS=-all-static
+
+    To do this with emscripten we prepend emconfigure and emmake on their lines respectively 
+
+    Then mv jq jq.o to get the output of emmake into what emcc can ingest 
+ -->
+

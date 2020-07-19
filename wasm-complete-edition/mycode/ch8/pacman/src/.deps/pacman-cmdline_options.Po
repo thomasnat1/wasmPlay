@@ -1,0 +1,180 @@
+pacman-cmdline_options.o: cmdline_options.cpp cmdline_options.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/string \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__config \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/string_view \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__string \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/algorithm \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/initializer_list \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cstddef \
+  /emsdk/emscripten/1.38.30/system/include/libc/stddef.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/bits/alltypes.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__nullptr \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/type_traits \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cstring \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/string.h \
+  /emsdk/emscripten/1.38.30/system/include/compat/string.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/string.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/features.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/strings.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/utility \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__tuple \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cstdint \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/stdint.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/stdint.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/bits/stdint.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__debug \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/memory \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/typeinfo \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/exception \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cstdlib \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/stdlib.h \
+  /emsdk/emscripten/1.38.30/system/include/compat/stdlib.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/stdlib.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/alloca.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/new \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/limits \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__undef_macros \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/iterator \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/iosfwd \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/wchar.h \
+  /emsdk/emscripten/1.38.30/system/include/compat/wchar.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/wchar.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__functional_base \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/__functional_base_03 \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/tuple \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/stdexcept \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cassert \
+  /emsdk/emscripten/1.38.30/system/include/libc/assert.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/atomic \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cstdio \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/stdio.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/stdio.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cwchar \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cwctype \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/cctype \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/ctype.h \
+  /emsdk/emscripten/1.38.30/system/include/compat/ctype.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/ctype.h \
+  /emsdk/emscripten/1.38.30/system/include/libcxx/wctype.h \
+  /emsdk/emscripten/1.38.30/system/include/compat/wctype.h \
+  /emsdk/emscripten/1.38.30/system/include/libc/wctype.h
+
+cmdline_options.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/string:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__config:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/string_view:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__string:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/algorithm:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/initializer_list:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cstddef:
+
+/emsdk/emscripten/1.38.30/system/include/libc/stddef.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/bits/alltypes.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__nullptr:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/type_traits:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cstring:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/string.h:
+
+/emsdk/emscripten/1.38.30/system/include/compat/string.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/string.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/features.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/strings.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/utility:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__tuple:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cstdint:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/stdint.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/stdint.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/bits/stdint.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__debug:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/memory:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/typeinfo:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/exception:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cstdlib:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/stdlib.h:
+
+/emsdk/emscripten/1.38.30/system/include/compat/stdlib.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/stdlib.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/alloca.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/new:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/limits:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__undef_macros:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/iterator:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/iosfwd:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/wchar.h:
+
+/emsdk/emscripten/1.38.30/system/include/compat/wchar.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/wchar.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__functional_base:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/__functional_base_03:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/tuple:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/stdexcept:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cassert:
+
+/emsdk/emscripten/1.38.30/system/include/libc/assert.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/atomic:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cstdio:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/stdio.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/stdio.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cwchar:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cwctype:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/cctype:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/ctype.h:
+
+/emsdk/emscripten/1.38.30/system/include/compat/ctype.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/ctype.h:
+
+/emsdk/emscripten/1.38.30/system/include/libcxx/wctype.h:
+
+/emsdk/emscripten/1.38.30/system/include/compat/wctype.h:
+
+/emsdk/emscripten/1.38.30/system/include/libc/wctype.h:

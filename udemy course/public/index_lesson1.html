@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAssembly Demo</title>
+</head>
+
+<body>
+    <h1>WebAssembly Demo</h1>
+    <script>
+        const wasmMemory = new WebAssembly.memory({initial: 20});
+
+        window.addEventListener('wasmValue', str => {
+            console.log('Received a new string from C:', str.detail);
+        })
+
+        const readMemStr = (offset, length) => {
+            const strBuffer = new Uint8Array(wasm.instance.exports.memory.buffer, offset, length);
+            const str = new TextDecoder().decode(strBuffer);
+            console.log(str);
+
+            window.dispatchEvent(new CustomEvent('wasmValue', { detail: str }))
+        }
+
+        const imports = {
+            env: {
+                numLog: console.log,
+                strLog: readMemStr,
+                memory:wasmMemory
+            }
+        }
+
+        WebAssembly.instantiateStreaming(fetch('/program (7).wasm'), imports)
+            .then(wasm => {
+                //log ready 
+                console.log('wasm ready');
+
+                //save wasm instance to top level for shiggles 
+                window.wasm = wasm;
+
+                //print exports of module 
+                console.log("Module exports: ", WebAssembly.Module.exports(wasm.module));
+
+                //print imports of module 
+                console.log("Module imports: ", WebAssembly.Module.imports(wasm.module));
+            })
+    </script>
+</body>
+
+</html>

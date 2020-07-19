@@ -1,3 +1,4 @@
+// compile command: emcc file.c -o file.js 
 #include <stdio.h>
 int main(){
     // Open myFile.txt for reading
